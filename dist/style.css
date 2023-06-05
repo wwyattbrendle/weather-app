@@ -1,0 +1,101 @@
+@font-face {
+    font-family: custom;
+    src: url(./fonts/Prompt-Regular.ttf);
+}
+
+:root{
+    --dark-background: rgb(0, 11, 20);
+    --light-background: rgb(0, 18, 32);
+    --highlight-color: #187cc9;
+    --light-blue: rgb(63, 207, 207);
+    --shadow: 0px 0px 5px 3px var(--highlight-color);
+    --yellow-color: rgb(252, 241, 217);
+}
+
+*{
+    font-family: custom, Georgia, 'Times New Roman', Times, serif;
+    padding: 0;
+    margin: 0;
+}
+
+img#img{
+    height: auto;
+    width: calc(100% - 50px);
+    max-width: 640px;
+    object-fit: cover;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: 70% 30%;
+}
+
+div#location{
+    grid-area: 1 / 1 / 2 / 2;
+    background-color: var(--light-background);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    color: whitesmoke;
+}
+
+div#container{
+    font-size:larger;
+}
+
+div#image-container{
+    grid-area: 1 / 2 / 2 / 3;
+    background-color: var(--light-background);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: whitesmoke;
+    justify-content: center;
+    align-items: center;
+}
+
+div#weather-stats{
+    grid-area: 2 / 1 / 3 / 3;
+    background-color: var(--dark-background);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20%;
+    color: whitesmoke;
+}
+
+h3#temp{
+    font-size: 60px;
+}
+
+div#divider{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+div#divider > p{
+    font-size: 20px;
+}
+
+button#change-units{
+    position: absolute;
+    top: 72%;
+    left: 90%;
+    width: 70px;
+    height: 30px;
+    border-radius: 60px;
+    background-color: var(--yellow-color);
+    border: solid 1px var(--highlight-color);
+    box-shadow: var(--shadow);
+}
+
+form#form{
+    width: 240px;
+}
