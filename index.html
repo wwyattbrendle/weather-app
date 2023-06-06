@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <script src="main.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="location">
+        <div id="container">
+            <h1 id="city">Raleigh,</h1>
+            <h2 id="region">North Carolina</h2>
+            <h4 id="country">United States of America</h4>
+        </div>
+        <form action="" method="post" id="form" novalidate>
+            <input type="text" id="user-input" required placeholder="Enter Major City">
+            <button id="submit">OK</button>
+            <p id="form-error"></p>
+        </form>
+    </div>
+    <div id="image-container">
+        <img src="" alt="" id="img">
+        <h2 id="current-weather">Partly Cloudy</h2>
+    </div>
+    <div id="weather-stats">
+        <h3 id="temp">77&deg;</h3>
+        <div id="divider">
+            <p id="humidity">41% Humidity</p>
+            <p id="wind-speed">Winds 4.3 mph</p>
+        </div>
+        <button id="change-units">Standard</button>
+    </div>
+</body>
+</html>
