@@ -12,8 +12,10 @@ postData(weather, units);
 page.unitsBtn.addEventListener("click", () => {
     if(units === "standard"){
         units = "metric";
+        page.unitsBtn.textContent = "metric";
     } else {
         units = "standard";
+        page.unitsBtn.textContent = "standard";
     }
     postData(weather, units);
 });
